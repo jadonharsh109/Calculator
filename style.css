@@ -1,0 +1,116 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+.home{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("bg1.jpg");
+    background-position: center;
+    background-size: cover;
+}
+.container {
+    background-color: antiquewhite;
+    height: fit-content;
+    width: fit-content;
+    padding: 20px;
+    border: 5px solid black;
+}
+.box {
+    display: grid;
+    grid-template-columns: 92px 92px 92px 92px;
+    grid-template-rows: 80px 80px 80px 80px;
+    grid-gap: 10px;
+    justify-items: center;
+    align-items: center;
+}
+.element {
+    border: 2px solid black;
+    padding: 15px 15px;
+    border-radius: 50px;
+    width: 89px;
+    height: fit-content;
+    text-align: center;
+    margin: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.element:hover{
+    transition: 0.5s;
+    background-color: rgb(153, 93, 93);
+    color: white;
+    outline: none;
+    border-color: red;
+}
+.output {
+    margin-top: 10px;
+    /* border: 2px solid green; */
+    font-size: 25px;
+    padding: 3px 10px;
+}
+.input {
+    height: 55px;
+    /* border: 2px solid red; */
+    padding: 5px 20px;
+    text-align: end;
+    font-size: 35px;
+}
+
+
+
+.main{
+    border: 2px solid black;
+    padding: 5px 2px;
+    background-color: floralwhite;
+    height: 115px;
+}
+
+.element:nth-child(1){
+    background-color: pink;
+}
+.element:nth-child(2){
+background-color: yellow;
+}
+.element:nth-child(3){
+background-color: yellowgreen;
+}
+.element:nth-child(4){
+    background-color: magenta;
+}
+.element:nth-child(8){
+    background-color: mediumturquoise;
+}
+
+.element:nth-child(12){
+    background-color: orange;
+}
+.element:nth-child(16){
+background-color: palegreen;
+}
+
+.element:nth-child(20){
+    background-color: darkgoldenrod;
+    }
+
+
+
+    @media (max-width : 700px)
+    {
+        .element {
+            width: 60px;
+        }
+        .box {
+            display: grid;
+            grid-template-columns: 65px 65px 65px 65px;
+            grid-template-rows: 80px 80px 80px 80px;
+            gap: 8px;
+            place-items: center;
+        }
+    }
